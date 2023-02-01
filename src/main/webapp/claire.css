@@ -1,0 +1,101 @@
+
+@media (max-width: 1023px) {
+.claire{
+	max-width: 80%;
+	}
+}
+
+@media (min-width: 1024px) {
+.claire{
+	max-width: 500px;
+	}
+}
+  
+
+
+.claire{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.claire label{
+	display:block;
+	margin-bottom: 10px;
+}
+.claire label > span{
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.claire fieldset{
+	border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+//	background: #deebf1;
+	box-shadow: inset 0px 0px 15px #6ccaf5;
+}
+.claire fieldset legend{
+	//background: #deebf1;
+	padding: 0px 8px 3px 8px;
+	box-shadow: inset 0px 0px 15px #6ccaf5;
+	font-size: 12px;
+}
+.claire textarea{
+	width:80%;
+	height:100px;
+}
+.claire input[type=text],
+.claire input[type=password],
+.claire input[type=date],
+.claire input[type=datetime],
+.claire input[type=number],
+.claire input[type=search],
+.claire input[type=time],
+.claire input[type=url],
+.claire input[type=email],
+.claire select, 
+.claire textarea{
+	border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+//	color: #F072A9;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #6ccaf5;
+	background: #dae6ea;
+}
+.claire  input[type=submit],
+.claire  input[type=button]{
+//	background: #EB3B88;
+	border: 1px solid #C94A81;
+	padding: 5px 15px 5px 15px;
+//	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px #6ccaf5;
+	border-radius: 3px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+.version{
+	border-radius: 5px;
+	border: 1px solid #FFD2D2;
+	padding: 2px;
+	font-size: x-small;
+}
+
+.required{
+	color:red;
+	font-weight:normal;
+}
+
+.local {
+  background-color: #C5F7DE;
+}
+
+textarea.local {
+  background-color: #D5F3E4;
+}
+
+.remote {
+  background-color: #deebf1;
+}
+

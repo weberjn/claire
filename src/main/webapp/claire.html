@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Claire Cloud Share</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="claire.png">
+      
+<link rel="stylesheet" href="claire.css">
+ <script src="claire.js"></script> 
+</head>
+<body>
+
+	<div class="claire">
+		
+			<fieldset class="local">
+				<legend class="local">Local</legend>
+
+				<label for="lmsg"><span id="userID"></span> <textarea class="local" id="localmsg" name="localmsg"
+						class="textarea-field"></textarea></label> <label><span> </span>
+					<input id="shareBT"
+					type="submit" value="Share" />
+					<input id="reconnectBT"
+					type="submit" value="Reconnect" />
+				<!-- 	<input id="clipShareBT"
+					type="submit" value="clipShare" />  -->
+					</label>
+			</fieldset>
+		
+	</div>
+
+	<div class="claire">
+			<fieldset class="remote">
+				<legend class="remote">Remote</legend>
+
+				<label for="rmsg"><span id="originUserID"></span> <textarea id="remotemsg" readonly="readonly" name="Remotemsg"
+						class="textarea-field">	</textarea></label> <label><span> </span><input id="copyBT"
+					type="submit" value="Copy" /></label>
+			</fieldset>
+	</div>
+	
+	<div class="version claire remote">
+		Connection <span id="status">closed</span>. ${project.name} ${project.version} ${timestamp}Z
+	</div>
+
+</body>
+</html>
