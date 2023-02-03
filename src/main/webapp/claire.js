@@ -1,16 +1,5 @@
     "use strict";
 
-document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === 'visible') {
-    console.log('visibilitychange, visible');
-  } else {
-    console.log('visibilitychange, not visible');
-  }
-});
-
-addEventListener('pageshow', (event) => {
-	console.log('pageshow');
- });
 
         var Claire = {};
 
@@ -74,6 +63,14 @@ addEventListener('pageshow', (event) => {
                 
                 document.getElementById("shareBT").disabled = false;
                 document.getElementById("reconnectBT").disabled = true;
+
+				if (!window.isSecureContext)
+				{
+					console.log('disable copy');
+		
+					document.getElementById('copyBT').disabled = true;		
+				}
+
 
 
            /*     document.getElementById('clipShareBT').onclick = function(event) {
